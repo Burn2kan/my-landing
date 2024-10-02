@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Landing page for my GitHub project">
-  <title>My Landing Page</title>
+  <meta name="description" content="Index page with navigation">
+  <title>Index Page</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -12,42 +12,39 @@
       margin: 0;
       padding: 0;
     }
-    header {
+    .navbar {
+      overflow: hidden;
       background-color: #333;
-      color: #fff;
-      padding: 20px;
+    }
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
       text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
     }
     section {
-      margin: 20px;
       padding: 20px;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    h1, p {
-      margin: 0 0 20px;
-    }
-    .btn {
-      background-color: #28a745;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Welcome to My Project</h1>
-</header>
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="form.html">Form Page</a>
+</div>
 
+<!-- Main Content -->
 <section>
-  <h2>About the Project</h2>
-  <p>This is a simple landing page for my GitHub repository.</p>
-  <p>Feel free to explore the code and contribute!</p>
-  <a href="https://github.com/username/repository-name" class="btn">View on GitHub</a>
+  <h1>Welcome to the Index Page</h1>
+  <p>This is the main landing page of your website. You can navigate to other sections using the links above.</p>
 </section>
 
 </body>
